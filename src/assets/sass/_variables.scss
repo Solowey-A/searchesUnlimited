@@ -1,0 +1,49 @@
+//  Text color
+$body-bg: #fff;
+$text-color: #113577;
+$background-color: #113577;
+$second-background-color: #ce3c24;
+$second-color: #c7c7c7;
+$third-color: #121212;
+$fourth-color: #fff;
+
+// link color
+$link-color: #113577;
+$link-color--hover: #113577;
+$border-color: #113577;
+
+//  Typography
+$main-font-family: "Montserrat-Regular";
+$second-font-family: "BookmanOldStyle-Bold";
+$third-font-family: "BookAntiqua-Bold";
+
+//Standart fon settings
+$font-size: 16px;
+$font-weight: 400; // Regular
+$line-height: 1.2;
+
+// Container width
+
+$container-padding: 15px;
+$large-padding: 30px;
+$container-width: 1200px + $container-padding * 2;
+
+//  Media screen
+
+$screen-xs: 359px;
+
+$screen-sm: 480px;
+
+$screen-phone: 767px;
+
+$screen-portrait: 812px;
+
+$screen-tablet-landscape: 1024px;
+
+$screen-md: 1280px;
+
+$screen-lg: 1440px;
+
+$screen-xl: 1920px;
+
+$screen-phoneX: 812px;

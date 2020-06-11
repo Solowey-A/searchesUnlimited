@@ -1,0 +1,58 @@
+//header style
+.header {
+  width: 100%;
+  padding: 35px;
+
+  &-menu {
+    padding: 35px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include max-w(1020px) {
+      flex-wrap: wrap;
+    }
+
+    @include max-w($screen-portrait) {
+      justify-content: center;
+    }
+  }
+
+  .search {
+    width: 100%;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 12px 0 12px 48px;
+    margin: 0;
+    @include fluid-font(16px, 16.5px, 375px, 1440px);
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+  .search-label {
+    max-width: 285px;
+    width: 100%;
+    position: relative;
+
+    @include max-w($screen-md) {
+      max-width: 190px;
+    }
+  }
+  .fa-search {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include fluid-font(16px, 25px, 375px, 1440px);
+  }
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include max-w($screen-portrait) {
+    flex-direction: column;
+  }
+}

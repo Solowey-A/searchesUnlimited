@@ -1,0 +1,95 @@
+// Include fonts here
+@import url('~font-awesome/css/font-awesome.css');
+//BookAntiqua-Bold
+@font-face {
+    font-family: "BookAntiqua-Bold";
+    src:  local('ANTQUAB'), local('ANTQUAB-Bold');
+    src: url("~@fonts/ANTQUAB.eot"); /* IE9 Compat Modes */
+    src: url("~@fonts/ANTQUAB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("~@fonts/ANTQUAB.svg") format("svg"), /* Legacy iOS */
+    url("~@fonts/ANTQUAB.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("~@fonts/ANTQUAB.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+//BookmanOldStyle-Bold
+@font-face {
+    font-family: "BookmanOldStyle-Bold";
+    src:  local('BookmanOldStyle'), local('BookmanOldStyle-Bold');
+    src: url("~@fonts/BOOKOSB.eot"); /* IE9 Compat Modes */
+    src: url("~@fonts/BOOKOSB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("~@fonts/BOOKOSB.svg") format("svg"), /* Legacy iOS */
+    url("~@fonts/BOOKOSB.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("~@fonts/BOOKOSB.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+//Montserrat-Bold
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("~@fonts/Montserrat-Bold.eot"); /* IE9 Compat Modes */
+    src: url("~@fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("~@fonts/Montserrat-Bold.svg") format("svg"), /* Legacy iOS */
+    url("~@fonts/Montserrat-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("~@fonts/Montserrat-Bold.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+//Montserrat-Regular
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("~@fonts/Montserrat-Regular.eot"); /* IE9 Compat Modes */
+    src: url("~@fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("~@fonts/Montserrat-Regular.svg") format("svg"), /* Legacy iOS */
+    url("~@fonts/Montserrat-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("~@fonts/Montserrat-Regular.woff") format("woff");/* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: $second-font-family;
+    @include fluid-font(28px, 59.5px, 375px, 1440px);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    color: $fourth-color;
+    margin: 0;
+}
+
+h2 {
+    font-family: $third-font-family;
+    @include fluid-font(24px, 40.5px, 375px, 1440px);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $text-color;
+}
+
+h3{
+    @include fluid-font(18px, 20px, 375px, 1440px);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    color: $fourth-color;
+    text-transform: uppercase;
+    margin: 0;
+}
+p{
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.72;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text-color;
+}
+
+

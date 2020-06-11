@@ -1,0 +1,101 @@
+//  Базовые стили
+
+html {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $body-bg;
+    color: $text-color;
+    font-family: $main-font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#wrapper, .about-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.html--hidden{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    outline: none;
+    transition: .3s;
+
+    &:hover,
+    &:active {
+        color: $link-color--hover;
+        font-weight: bold;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.page-container {
+    max-width: $container-width;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}

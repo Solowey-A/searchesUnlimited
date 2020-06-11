@@ -1,0 +1,86 @@
+.about {
+  width: 100%;
+  &-intro {
+    padding: 500px 0;
+    width: 100%;
+    background-image: url("../images/about-page/intro-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include max-w($screen-xl) {
+      padding: 320px 0;
+    }
+
+    @include max-w($screen-lg) {
+      padding: 250px 0 285px 0;
+    }
+  }
+
+  .main-titile {
+    text-align: center;
+  }
+  &-history {
+    padding: 85px 0;
+  }
+  &-mission {
+    padding: 20px 0;
+  }
+  &-approach {
+    padding: 15px 0 95px 0;
+    &__image {
+      padding-top: 35px;
+    }
+  }
+
+  &-history, &-mission, &-approach {
+    .page-container {
+      display: flex;
+      flex-direction: row;
+      @include max-w($screen-phone) {
+        flex-direction: column-reverse;
+        .about-mission__image {
+          order: 0;
+        }
+        .about-mission__text {
+          order: 1;
+        }
+      }
+    }
+
+    &__image, &__text {
+      width: 50%;
+      @include max-w($screen-phone) {
+        width: 100%;
+      }
+    }
+
+    &__image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text:not(.about-mission__text) {
+      padding-left: 70px;
+      @include max-w($screen-phone) {
+        padding: 0;
+      }
+    }
+
+    &__text:not(.about-history__text):not(.about-approach__text) {
+      padding-right: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include max-w($screen-phone) {
+        padding: 0;
+      }
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+}

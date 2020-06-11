@@ -1,0 +1,160 @@
+.footer {
+  background-image: url("../images/about-page/footer-banner.png");
+  background-position: 45% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 115px 0 200px 0;
+
+  @include max-w($screen-tablet-landscape) {
+    background-position: 50% 50%;
+  }
+  &-categories, &-contacts, &-social {
+    width: 33%;
+
+    @include max-w($screen-phone) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &-top {
+    @include max-w($screen-portrait) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &-nav {
+    &__list {
+      list-style: none;
+      padding: 0;
+    }
+
+    &__item a {
+      color: $fourth-color;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.16;
+      letter-spacing: normal;
+      text-align: left;
+    }
+  }
+  &-contacts {
+    justify-content: space-between;
+  }
+  .address {
+    max-width: 220px;
+    width: 100%;
+    color: $fourth-color;
+    font-size: 16px;
+    padding-top: 17px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 2.16;
+
+    @include max-w($screen-phone) {
+      text-align: center;
+    }
+  }
+  .wrap {
+    @include max-w($screen-phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .fa-map-marker {
+    font-size: 20px;
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+  }
+
+  .our-email {
+    color: $fourth-color;
+    padding-bottom: 22px;
+  }
+
+  .social {
+    padding-left: 55px;
+
+    @include max-w($screen-portrait) {
+      padding: 25px 0 0;
+      text-align: center;
+    }
+  }
+  .social-wrapper {
+    padding: 25px 0 17px;
+  }
+  .twitter {
+    margin: 0;
+  }
+
+  .likes {
+    max-width: 120px;
+    width: 100%;
+    padding: 5px 0;
+    margin-right: 5px;
+    font-size: 18px;
+    color: $text-color;
+  }
+  .fa-thumbs-up {
+    color: $text-color;
+    font-size: 25px;
+  }
+  .share-button {
+    @include max-w($screen-portrait) {
+      justify-content: center;
+    }
+  }
+  .share {
+    color: $text-color;
+    padding: 10px 12px;
+  }
+  &-bottom {
+    align-items: center;
+    & .vacancy-info {
+      color: $fourth-color;
+      text-align: center;
+      font-size: 19.5px;
+      font-weight: bold;
+      line-height: 1.4;
+      margin: 0;
+      padding: 40px 0 5px;
+    }
+  }
+  .subscribe {
+    color: $fourth-color;
+    text-align: center;
+    max-width: 505px;
+    width: 100%;
+    position: relative;
+  }
+
+  #email {
+    background-color: $body-bg;
+    border: transparent;
+    padding: 14px 8px 14px 20px;
+    @include fluid-font(16px, 20px, 375px, 1440px);
+    color: $text-color;
+    border-radius: 5px;
+  }
+
+  .submit {
+    border-radius: 5px;
+    background-color: $second-background-color;
+    color: $fourth-color;
+    border: transparent;
+    padding: 13px 15px;
+    position: absolute;
+    right: 4px;
+    bottom: 12px;
+    font-size: 16px;
+
+    @include max-w($screen-phone) {
+      bottom: 10px;
+    }
+  }
+}

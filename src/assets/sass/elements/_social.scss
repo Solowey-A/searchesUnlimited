@@ -1,0 +1,52 @@
+.social {
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    @include max-w($screen-portrait) {
+      padding-top: 20px;
+    }
+  }
+  &-link {
+    height: 31px;
+    width: 31px;
+    background-color: $background-color;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 19px;
+    color: $fourth-color;
+  }
+}
+
+.youtube:hover {
+  background: #c4302b;
+  color: #fff;
+}
+
+.plus:hover {
+  background: #DD4B39;
+  color: #fff
+}
+
+.twitter:hover {
+  background: #00acee;
+  color: #fff;
+}
+
+.facebook:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+.skype:hover {
+  background: #00aff0;
+  color: #fff
+}
+
+.linkedin:hover {
+  background: #0e76a8;
+  color: #fff;
+}
+
